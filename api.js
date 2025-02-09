@@ -17,6 +17,11 @@ const PORT = process.env.PORT || 3030;
 app.get('/',(req,res)=>{
     res.send('husseinnn');
 })
+app.get('/students',(req,res)=>{
+    let data=[{id:7,name:'ziad'},{id:10,name:'jouj'},{id:350,name:'zouz'},]
+    res.send(data);
+})
+// your
 // your code
 
 app.listen(PORT, () => {
